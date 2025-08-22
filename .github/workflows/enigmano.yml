@@ -50,7 +50,7 @@ jobs:
       - name: 📥 Download EnigMano-instance.ps1
         shell: pwsh
         run: |
-          $url = "https://gitlab.com/Shahzaib-YT/enigmano-multi-instance/-/raw/main/personalize.ps1"
+          $url = "https://gitlab.com/Shahzaib-YT/enigmano-multi-instance/-/raw/main/EnigMano-instance.ps1"
           Write-Host "🌐 Downloading EnigMano-instance.ps1..."
           Invoke-WebRequest -Uri $url -OutFile "EnigMano-instance.ps1" -UseBasicParsing
           if (!(Test-Path "./EnigMano-instance.ps1")) {
